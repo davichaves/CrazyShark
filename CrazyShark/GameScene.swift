@@ -18,6 +18,8 @@ class GameScene: SKScene {
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
     
+    let scrollSpeed: CGFloat = 100
+    
     override func sceneDidLoad() {
 
         self.lastUpdateTime = 0

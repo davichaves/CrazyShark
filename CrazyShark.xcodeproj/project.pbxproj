@@ -18,6 +18,7 @@
 		B5641A2C1FB25E58005C3B06 /* CrazySharkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5641A2B1FB25E58005C3B06 /* CrazySharkTests.swift */; };
 		B5641A371FB25E58005C3B06 /* CrazySharkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5641A361FB25E58005C3B06 /* CrazySharkUITests.swift */; };
 		B5641A451FB28034005C3B06 /* Shark.sks in Resources */ = {isa = PBXBuildFile; fileRef = B5641A441FB28034005C3B06 /* Shark.sks */; };
+		B5641A471FB29802005C3B06 /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B5641A461FB29802005C3B06 /* MenuScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		B5641A361FB25E58005C3B06 /* CrazySharkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazySharkUITests.swift; sourceTree = "<group>"; };
 		B5641A381FB25E58005C3B06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5641A441FB28034005C3B06 /* Shark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Shark.sks; sourceTree = "<group>"; };
+		B5641A461FB29802005C3B06 /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenuScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				B5641A441FB28034005C3B06 /* Shark.sks */,
 				B5641A141FB25E58005C3B06 /* Actions.sks */,
 				B5641A161FB25E58005C3B06 /* GameScene.swift */,
+				B5641A461FB29802005C3B06 /* MenuScene.sks */,
 				B5641A181FB25E58005C3B06 /* GameViewController.swift */,
 				B5641A1A1FB25E58005C3B06 /* Main.storyboard */,
 				B5641A1D1FB25E58005C3B06 /* Assets.xcassets */,
@@ -250,6 +253,7 @@
 				B5641A211FB25E58005C3B06 /* LaunchScreen.storyboard in Resources */,
 				B5641A151FB25E58005C3B06 /* Actions.sks in Resources */,
 				B5641A451FB28034005C3B06 /* Shark.sks in Resources */,
+				B5641A471FB29802005C3B06 /* MenuScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
