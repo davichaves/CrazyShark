@@ -39,24 +39,19 @@ class GameScene: SKScene {
 
         self.lastUpdateTime = 0
         
-        // Create shape node to use during mouse interaction
-        let w = (self.size.width + self.size.height) * 0.05
-        self.spinnyNode = SKShapeNode.init(rectOf: CGSize.init(width: w, height: w), cornerRadius: w * 0.3)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        /* Called when a touch begins */
         
-        if let spinnyNode = self.spinnyNode {
-            spinnyNode.lineWidth = 2.5
-            
-            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1)))
-            spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
-                                              SKAction.fadeOut(withDuration: 0.5),
-                                              SKAction.removeFromParent()]))
-        }
+        print("test")
+        
+        shark.physicsBody?.applyImpulse(CGVector(dx: 10, dy: 0))
         
     }
     
-    
-    func touchDown(atPoint pos : CGPoint) {
-        print("test")
+    /*func touchDown(atPoint pos : CGPoint) {
+        print("test1")
         
         shark.physicsBody?.applyImpulse(CGVector(dx: 0, dy: 10))
         
@@ -101,7 +96,7 @@ class GameScene: SKScene {
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         for t in touches { self.touchUp(atPoint: t.location(in: self)) }
-    }
+    }*/
     
     
     override func update(_ currentTime: TimeInterval) {
@@ -123,7 +118,7 @@ class GameScene: SKScene {
         self.lastUpdateTime = currentTime
         
         /* Process world scrolling */
-        scrollWorld()
+        //scrollWorld()
     }
     
     func scrollWorld() {
