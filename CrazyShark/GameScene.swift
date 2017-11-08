@@ -18,7 +18,22 @@ class GameScene: SKScene {
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
     
-    let scrollSpeed: CGFloat = 100
+    let fixedDelta: CFTimeInterval = 1.0/60.0 /* 60 FPS */
+    let scrollSpeed: CGFloat = 160
+    
+    var scrollLayer: SKNode!
+    var shark: SKSpriteNode!
+    
+    override func didMove(to view: SKView) {
+        /* Setup your scene here */
+        
+        /* Set reference to scroll layer node */
+        scrollLayer = self.childNode(withName: "scrollLayer")
+        
+        /* Recursive node search for 'hero' (child of referenced node) */
+        shark = self.childNode(withName: "//shark") as! SKSpriteNode
+        
+    }
     
     override func sceneDidLoad() {
 
@@ -36,10 +51,15 @@ class GameScene: SKScene {
                                               SKAction.fadeOut(withDuration: 0.5),
                                               SKAction.removeFromParent()]))
         }
+        
     }
     
     
     func touchDown(atPoint pos : CGPoint) {
+        print("test")
+        
+        shark.physicsBody?.applyImpulse(CGVector(dx: 0, dy: 10))
+        
         if let n = self.spinnyNode?.copy() as! SKShapeNode? {
             n.position = pos
             n.strokeColor = SKColor.green
@@ -101,5 +121,13 @@ class GameScene: SKScene {
         }
         
         self.lastUpdateTime = currentTime
+        
+        /* Process world scrolling */
+        scrollWorld()
+    }
+    
+    func scrollWorld() {
+        /* Scroll World */
+        scrollLayer.position.x -= scrollSpeed * CGFloat(fixedDelta)
     }
 }
