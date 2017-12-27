@@ -18,7 +18,7 @@
 		B5641A2C1FB25E58005C3B06 /* CrazySharkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5641A2B1FB25E58005C3B06 /* CrazySharkTests.swift */; };
 		B5641A371FB25E58005C3B06 /* CrazySharkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5641A361FB25E58005C3B06 /* CrazySharkUITests.swift */; };
 		B5641A471FB29802005C3B06 /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B5641A461FB29802005C3B06 /* MenuScene.sks */; };
-		B5F6E2A21FB39E1E009A1B77 /* Assets.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B5F6E2A11FB39E1D009A1B77 /* Assets.atlas */; };
+		B5A14EF81FF42C41004B808B /* Assets.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B5A14EF71FF42C41004B808B /* Assets.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 		B5641A361FB25E58005C3B06 /* CrazySharkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazySharkUITests.swift; sourceTree = "<group>"; };
 		B5641A381FB25E58005C3B06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5641A461FB29802005C3B06 /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenuScene.sks; sourceTree = "<group>"; };
-		B5F6E2A11FB39E1D009A1B77 /* Assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Assets.atlas; path = Assets/Assets.atlas; sourceTree = SOURCE_ROOT; };
+		B5A14EF71FF42C41004B808B /* Assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Assets.atlas; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +114,8 @@
 				B5641A461FB29802005C3B06 /* MenuScene.sks */,
 				B5641A181FB25E58005C3B06 /* GameViewController.swift */,
 				B5641A1A1FB25E58005C3B06 /* Main.storyboard */,
+				B5A14EF71FF42C41004B808B /* Assets.atlas */,
 				B5641A1D1FB25E58005C3B06 /* Assets.xcassets */,
-				B5F6E2A11FB39E1D009A1B77 /* Assets.atlas */,
 				B5641A1F1FB25E58005C3B06 /* LaunchScreen.storyboard */,
 				B5641A221FB25E58005C3B06 /* Info.plist */,
 			);
@@ -249,7 +249,7 @@
 			files = (
 				B5641A1C1FB25E58005C3B06 /* Main.storyboard in Resources */,
 				B5641A131FB25E58005C3B06 /* GameScene.sks in Resources */,
-				B5F6E2A21FB39E1E009A1B77 /* Assets.atlas in Resources */,
+				B5A14EF81FF42C41004B808B /* Assets.atlas in Resources */,
 				B5641A1E1FB25E58005C3B06 /* Assets.xcassets in Resources */,
 				B5641A211FB25E58005C3B06 /* LaunchScreen.storyboard in Resources */,
 				B5641A151FB25E58005C3B06 /* Actions.sks in Resources */,
