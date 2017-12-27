@@ -31,7 +31,7 @@ class GameScene: SKScene {
         scrollLayer = self.childNode(withName: "scrollLayer")
         
         /* Recursive node search for 'hero' (child of referenced node) */
-        shark = self.childNode(withName: "//shark") as! SKSpriteNode
+        shark = self.childNode(withName: "Shark") as! SKSpriteNode
         
     }
     

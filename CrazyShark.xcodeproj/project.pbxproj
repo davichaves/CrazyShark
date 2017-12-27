@@ -17,7 +17,6 @@
 		B5641A211FB25E58005C3B06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5641A1F1FB25E58005C3B06 /* LaunchScreen.storyboard */; };
 		B5641A2C1FB25E58005C3B06 /* CrazySharkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5641A2B1FB25E58005C3B06 /* CrazySharkTests.swift */; };
 		B5641A371FB25E58005C3B06 /* CrazySharkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5641A361FB25E58005C3B06 /* CrazySharkUITests.swift */; };
-		B5641A451FB28034005C3B06 /* Shark.sks in Resources */ = {isa = PBXBuildFile; fileRef = B5641A441FB28034005C3B06 /* Shark.sks */; };
 		B5641A471FB29802005C3B06 /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B5641A461FB29802005C3B06 /* MenuScene.sks */; };
 		B5F6E2A21FB39E1E009A1B77 /* Assets.atlas in Resources */ = {isa = PBXBuildFile; fileRef = B5F6E2A11FB39E1D009A1B77 /* Assets.atlas */; };
 /* End PBXBuildFile section */
@@ -56,7 +55,6 @@
 		B5641A321FB25E58005C3B06 /* CrazySharkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrazySharkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5641A361FB25E58005C3B06 /* CrazySharkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazySharkUITests.swift; sourceTree = "<group>"; };
 		B5641A381FB25E58005C3B06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5641A441FB28034005C3B06 /* Shark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Shark.sks; sourceTree = "<group>"; };
 		B5641A461FB29802005C3B06 /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenuScene.sks; sourceTree = "<group>"; };
 		B5F6E2A11FB39E1D009A1B77 /* Assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Assets.atlas; path = Assets/Assets.atlas; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -111,7 +109,6 @@
 			children = (
 				B5641A101FB25E58005C3B06 /* AppDelegate.swift */,
 				B5641A121FB25E58005C3B06 /* GameScene.sks */,
-				B5641A441FB28034005C3B06 /* Shark.sks */,
 				B5641A141FB25E58005C3B06 /* Actions.sks */,
 				B5641A161FB25E58005C3B06 /* GameScene.swift */,
 				B5641A461FB29802005C3B06 /* MenuScene.sks */,
@@ -256,7 +253,6 @@
 				B5641A1E1FB25E58005C3B06 /* Assets.xcassets in Resources */,
 				B5641A211FB25E58005C3B06 /* LaunchScreen.storyboard in Resources */,
 				B5641A151FB25E58005C3B06 /* Actions.sks in Resources */,
-				B5641A451FB28034005C3B06 /* Shark.sks in Resources */,
 				B5641A471FB29802005C3B06 /* MenuScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
