@@ -27,10 +27,7 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) {
         /* Setup your scene here */
         
-        /* Set reference to scroll layer node */
-        scrollLayer = self.childNode(withName: "scrollLayer")
-        
-        /* Recursive node search for 'hero' (child of referenced node) */
+        /* Finding the shark node */
         shark = self.childNode(withName: "Shark") as! SKSpriteNode
         
     }
@@ -47,13 +44,7 @@ class GameScene: SKScene {
             let scale:CGFloat = 0.05
             
             let deltax = (location.x - shark.position.x)*scale
-            print("location x:\(location.x)")
-            print("shark x:\(shark.parent?.position.x)")
-            print("delta x:\(deltax)")
             let deltay = (location.y - shark.position.y)*scale
-            print("delta y:\(deltay)")
-            print("location y:\(location.y)")
-            print("shark y:\(shark.parent?.position.y)")
             
             shark.physicsBody?.applyImpulse(CGVector(dx: deltax, dy: deltay))
         }
