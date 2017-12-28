@@ -41,11 +41,27 @@ class GameScene: SKScene {
             /* Reset velocity */
             shark.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
             
-            let scale:CGFloat = 0.05
+            let scale:CGFloat = 0.02
             
-            let deltax = (location.x - shark.position.x)*scale
-            let deltay = (location.y - shark.position.y)*scale
+            var deltax = (location.x - shark.position.x)*scale
+            if(deltax > 10) {
+                deltax = 10;
+            } else if (deltax < -10) {
+                deltax = -10;
+            }
+            print("deltax: \(deltax)")
+            var deltay = (location.y - shark.position.y)*scale
+            if(deltay > 10) {
+                deltay = 10;
+            } else if (deltay < -10) {
+                deltay = -10;
+            }
+            print("deltay: \(deltay)")
+            print("angle: \(atan2(deltay, deltax))")
             
+            let rotation:SKAction = SKAction.rotate(toAngle: atan2(deltay, deltax), duration: 0.1)
+            
+            shark.run(rotation)
             shark.physicsBody?.applyImpulse(CGVector(dx: deltax, dy: deltay))
         }
         
