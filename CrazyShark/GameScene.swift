@@ -49,15 +49,12 @@ class GameScene: SKScene {
             } else if (deltax < -10) {
                 deltax = -10;
             }
-            print("deltax: \(deltax)")
             var deltay = (location.y - shark.position.y)*scale
             if(deltay > 10) {
                 deltay = 10;
             } else if (deltay < -10) {
                 deltay = -10;
             }
-            print("deltay: \(deltay)")
-            print("angle: \(atan2(deltay, deltax))")
             
             let rotation:SKAction = SKAction.rotate(toAngle: atan2(deltay, deltax), duration: 0.1)
             
